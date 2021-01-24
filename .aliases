@@ -1,0 +1,25 @@
+# ZSH
+# ===
+alias ohmyzsh="nvim ${ZSH}/oh-my-zsh.sh"
+alias zshconfig="nvim ${ZDOTDIR}/.zshrc"
+
+# Terminal
+# ========
+alias home='cd ~'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ls='ls -A'
+alias vim='nvim'
+
+# Git
+# ===
+alias g='git'
+# check .gitconfig for other aliases
+
+# NPM
+# ===
+alias nr='npm run'
+alias ni='npm install'
+alias nid='npm install -D'
+alias nip='npm install --only=prod'
