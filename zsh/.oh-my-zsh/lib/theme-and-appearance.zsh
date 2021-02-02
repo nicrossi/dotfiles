@@ -18,10 +18,10 @@ if [[ "$DISABLE_LS_COLORS" != "true" ]]; then
     # will be installed on purpose and can't be pulled in by installing
     # coreutils, so prefer it to "gls".
     gls --color -d . &>/dev/null && alias ls='gls --color=tty'
-    colorls -G -d . &>/dev/null && alias ls='colorls -G'
+    colorls -G -d . &>/dev/null && alias ls='colorls -AG'
   elif [[ "$OSTYPE" == (darwin|freebsd)* ]]; then
     # this is a good alias, it works by default just using $LSCOLORS
-    ls -G . &>/dev/null && alias ls='ls -G'
+    ls -G . &>/dev/null && alias ls='ls -AG'
 
     # only use coreutils ls if there is a dircolors customization present ($LS_COLORS or .dircolors file)
     # otherwise, gls will use the default color scheme which is ugly af
@@ -32,7 +32,7 @@ if [[ "$DISABLE_LS_COLORS" != "true" ]]; then
       (( $+commands[dircolors] )) && eval "$(dircolors -b)"
     fi
 
-    ls --color -d . &>/dev/null && alias ls='ls --color=tty' || { ls -G . &>/dev/null && alias ls='ls -G' }
+    ls --color -d . &>/dev/null && alias ls='ls --color=tty' || { ls -G . &>/dev/null && alias ls='ls -AG' }
 
     # Take advantage of $LS_COLORS for completion as well.
     zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"

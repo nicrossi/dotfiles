@@ -15,7 +15,7 @@ ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# a theme from this variable instead of looking in ~/dotfiles/zsh/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -68,8 +68,8 @@ ZSH_THEME="robbyrussell"
 
 # Plugins
 # -------
-# Standard plugins can be found in ~/configs/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/configs/.oh-my-zsh/custom/plugins/
+# Standard plugins can be found in ~/dotfiles/zsh/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/dotfiles/zsh/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
@@ -85,4 +85,4 @@ prompt_dir () {
 }
 prompt_context () { }
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e "${HOME}/dotfiles/zsh/.iterm2_shell_integration.zsh" && source "${HOME}/dotfiles/zsh/.iterm2_shell_integration.zsh"

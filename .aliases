@@ -5,12 +5,15 @@ alias zshconfig="nvim ${ZDOTDIR}/.zshrc"
 
 # Terminal
 # ========
+# Some other aliases are defined in:
+# .oh-my-zsh/lib/theme-and-appearance.zsh
 alias home='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias ls='ls -A'
+alias ls='ls -GA'
 alias vim='nvim'
+
 
 # Git
 # ===

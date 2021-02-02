@@ -2,6 +2,9 @@
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
+" NerdTree
+nnoremap <Leader>e :NERDTree
+
 " Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
@@ -39,8 +42,7 @@ nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 " <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? \<C-n>" : "\<TAB>"
-
+inoremap <expr><TAB> pumvisible() ? "<C-n>" : "<TAB>"
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
@@ -51,31 +53,18 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Better line navigation
-nnoremap s <Left>
-vnoremap s <Left>
-
-nnoremap d <Right>
-vnoremap d <Right>
-
-nnoremap k <Up>
-vnoremap k <Up>
-
-nnoremap j <Down>
-vnoremap j <Down>
-
 " begininig of line
 nnoremap w 0
 vnoremap w 0
 " end of line
 nnoremap W <End>
 vnoremap W <End>
-" word backwards
-nnoremap a b
-vnoremap a b
-" word forward
-nnoremap f w
-vnoremap f w
+" jump backwards start of word
+nnoremap t b
+vnoremap t b
+" jump forward start of word
+nnoremap n w
+vnoremap n w
 " begining of file 
 nnoremap o gg
 vnoremap o gg

@@ -2,3 +2,8 @@
 zsh/.zsh_history
 zsh/.zcompdump*
 
+# temp files
+.DS_Strore
+
+nvim/autoload/plugged
+
