@@ -2,7 +2,7 @@ export PATH=/opt/homebrew/bin:$PATH
 
 export EDITOR=nvim
 export MYVIMRC="$HOME/dotfiles/nvim/init.vim"
-
+export NVM_DIR="$HOME/dotfiles/.nvm"
 export PATH_TO_PLAYGROUND="$HOME/playground"
 export PATH_TO_WORKSPACE="$HOME/workspace"
 
