@@ -25,12 +25,12 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
-let g:which_key_map['e'] = [ ':NERDTree'       , 'NERDTree' ]
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
-let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
+let g:which_key_map['e'] = [ ':NERDTree'                  , 'NerdTree']
+
 
 " s is for search
 let g:which_key_map.s = {
@@ -59,6 +59,82 @@ let g:which_key_map.s = {
       \ 'w' : [':Windows'      , 'search windows'],
       \ 'y' : [':Filetypes'    , 'file types'],
       \ 'z' : [':FZF'          , 'FZF'],
+      \ }
+
+
+" f is for find and replace
+let g:which_key_map.f = {
+      \ 'name' : '+find_&_replace' ,
+      \ 'f' : [':Farr --source=vimgrep'    , 'file'],
+      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
+      \ }
+
+" g is for git
+let g:which_key_map.g = {
+      \ 'name' : '+git' ,
+      \ 'a' : [':Git add .'                        , 'add all'],
+      \ 'A' : [':CocCommand fzf-preview.GitStatus' , 'actions'],
+      \ 'b' : [':Git blame'                        , 'blame'],
+      \ 'B' : [':GBrowse'                          , 'browse'],
+      \ 'c' : [':Git commit'                       , 'commit'],
+      \ 'd' : [':Git diff'                         , 'diff'],
+      \ 'D' : [':Gdiffsplit'                       , 'diff split'],
+      \ 'g' : [':GGrep'                            , 'git grep'],
+      \ 'G' : [':Gstatus'                          , 'status'],
+      \ 'h' : [':GitGutterLineHighlightsToggle'    , 'highlight hunks'],
+      \ 'H' : ['<Plug>(GitGutterPreviewHnk)'      , 'preview hunk'],
+      \ 'i' : [':Gist -b'                          , 'post gist'],
+      \ 'j' : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'],
+      \ 'k' : ['<Plug>(GitGutterPrevHunk)'         , 'prev hunk'],
+      \ 'l' : [':Git log'                          , 'log'],
+      \ 'm' : ['<Plug>(git-messenger)'             , 'message'],
+      \ 'p' : [':Git push'                         , 'push'],
+      \ 'P' : [':Git pull'                         , 'pull'],
+      \ 'r' : [':GRemove'                          , 'remove'],
+      \ 's' : ['<Plug>(GitGutterStageHunk)'        , 'stage hunk'],
+      \ 'S' : [':CocCommand fzf-preview.GitStatus' , 'status'],
+      \ 't' : [':GitGutterSignsToggle'             , 'toggle signs'],
+      \ 'u' : ['<Plug>(GitGutterUndoHunk)'         , 'undo hunk'],
+      \ 'v' : [':GV'                               , 'view commits'],
+      \ 'V' : [':GV!'                              , 'view buffer commits'],
+      \ }
+
+" l is for language server protocol
+let g:which_key_map.l = {
+      \ 'name' : '+lsp' ,
+      \ '.' : [':CocConfig'                          , 'config'],
+      \ ';' : ['<Plug>(coc-refactor)'                , 'refactor'],
+      \ 'a' : ['<Plug>(coc-codeaction)'              , 'code action'],
+      \ 'A' : ['<Plug>(coc-codeaction-selected)'     , 'selected action'],
+      \ 'b' : [':CocNext'                            , 'next action'],
+      \ 'B' : [':CocPrev'                            , 'prev action'],
+      \ 'c' : [':CocList commands'                   , 'commands'],
+      \ 'd' : ['<Plug>(coc-definition)'              , 'definition'],
+      \ 'D' : ['<Plug>(coc-declaration)'             , 'declaration'],
+      \ 'e' : [':CocList extensions'                 , 'extensions'],
+      \ 'f' : ['<Plug>(coc-format-selected)'         , 'format selected'],
+      \ 'F' : ['<Plug>(coc-format)'                  , 'format'],
+      \ 'h' : ['<Plug>(coc-float-hide)'              , 'hide'],
+      \ 'i' : ['<Plug>(coc-implementation)'          , 'implementation'],
+      \ 'I' : [':CocList diagnostics'                , 'diagnostics'],
+      \ 'j' : ['<Plug>(coc-float-jump)'              , 'float jump'],
+      \ 'l' : ['<Plug>(coc-codelens-action)'         , 'code lens'],
+      \ 'n' : ['<Plug>(coc-diagnostic-next)'         , 'next diagnostic'],
+      \ 'N' : ['<Plug>(coc-diagnostic-next-error)'   , 'next error'],
+      \ 'o' : [':Vista!!'                            , 'outline'],
+      \ 'O' : [':CocList outline'                    , 'search outline'],
+      \ 'p' : ['<Plug>(coc-diagnostic-prev)'         , 'prev diagnostic'],
+      \ 'P' : ['<Plug>(coc-diagnostic-prev-error)'   , 'prev error'],
+      \ 'q' : ['<Plug>(coc-fix-current)'             , 'quickfix'],
+      \ 'r' : ['<Plug>(coc-references)'              , 'references'],
+      \ 'R' : ['<Plug>(coc-rename)'                  , 'rename'],
+      \ 's' : [':CocList -I symbols'                 , 'references'],
+      \ 'S' : [':CocList snippets'                   , 'snippets'],
+      \ 't' : ['<Plug>(coc-type-definition)'         , 'type definition'],
+      \ 'u' : [':CocListResume'                      , 'resume list'],
+      \ 'U' : [':CocUpdate'                          , 'update CoC'],
+      \ 'z' : [':CocDisable'                         , 'disable CoC'],
+      \ 'Z' : [':CocEnable'                          , 'enable CoC'],
       \ }
 
 " Register which key map

@@ -70,6 +70,9 @@ function! LightlineFilename()
   return filename . modified
 endfunction
 
+" NerdTree Settings
+let NERDTreeShowHidden=1
+
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me

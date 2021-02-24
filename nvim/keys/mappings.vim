@@ -54,17 +54,17 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " begininig of line
-nnoremap w 0
-vnoremap w 0
+nnoremap q 0
+vnoremap q 0
 " end of line
-nnoremap W <End>
-vnoremap W <End>
+nnoremap Q <End>
+vnoremap Q <End>
 " jump backwards start of word
 nnoremap t b
 vnoremap t b
 " jump forward start of word
-nnoremap n w
-vnoremap n w
+nnoremap w w
+vnoremap w w
 " begining of file 
 nnoremap o gg
 vnoremap o gg
