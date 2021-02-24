@@ -10,3 +10,6 @@ nvim/autoload/plugged
 # coc
 coc/**
 
+# Node modules
+node_modules/**
+.nvm/
