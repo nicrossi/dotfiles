@@ -7,6 +7,22 @@
   "java.home": "Library/Java/JavaVirtualMachines/openjdk-15.0.2/Contents/Home",
 
   "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
+  
+  // Jedi
+  "jedi.enable": true,
+  "jedi.startupMessage": false,
+  "jedi.markupKindPreferred": "plaintext",
+  "jedi.trace.server": "off",
+  "jedi.jediSettings.autoImportModules": [],
+  "jedi.executable.command": "jedi-language-server",
+  "jedi.executable.args": [],
+  "jedi.completion.disableSnippets": false,
+  "jedi.completion.resolveEagerly": false,
+  "jedi.diagnostics.enable": true,
+  "jedi.diagnostics.didOpen": true,
+  "jedi.diagnostics.didChange": true,
+  "jedi.diagnostics.didSave": true,
+  "jedi.workspace.extraPaths": [],
 
   "languageserver": {
     "bash": {
@@ -145,8 +161,8 @@
       "command": "efm-langserver",
       "args": [],
       // custom config path
-      // "args": ["-c", "/path/to/your/config.yaml"],
-      "filetypes": ["vim", "eruby", "markdown"]
+      // "args": ["-c", "$HOME/dotfiles/nvim/plug-config/efm/config.yaml"],
+      "filetypes": ["vim", "eruby", "markdown", "yaml"]
     },
 
     "clangd": {
