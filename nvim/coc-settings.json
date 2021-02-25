@@ -4,8 +4,10 @@
   "java.referencesCodeLens.enabled": true,
   "java.implementationsCodeLens.enabled": true,
   "java.completion.enabled": true,
-  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
-  
+  "java.home": "Library/Java/JavaVirtualMachines/openjdk-15.0.2/Contents/Home",
+
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
+
   "languageserver": {
     "bash": {
       "command": "bash-language-server",

@@ -5,8 +5,8 @@ export MYVIMRC="$HOME/dotfiles/nvim/init.vim"
 export NVM_DIR="$HOME/dotfiles/.nvm"
 export PATH_TO_PLAYGROUND="$HOME/playground"
 export PATH_TO_WORKSPACE="$HOME/workspace"
-
 export XDG_CONFIG_HOME="$HOME/dotfiles"
+export JAVA_HOME="Library/Java/JavaVirtualMachines/openjdk-15.0.2/Contents/Home"
 
 # Path to dotfiles directory
 export DOTDIR="${HOME}/dotfiles"
