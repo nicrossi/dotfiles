@@ -12,3 +12,5 @@ source $HOME/dotfiles/nvim/themes/onedark.vim
 source $HOME/dotfiles/nvim/keys/whick-key.vim
 source $HOME/dotfiles/nvim/plug-config/coc.vim
 source $HOME/dotfiles/nvim/lua/treesitter.lua
+source $HOME/dotfiles/nvim/plug-config/fzf.vim
+source $HOME/dotfiles/nvim/plug-config/vim-rooter.vim

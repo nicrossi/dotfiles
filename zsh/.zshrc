@@ -91,3 +91,5 @@ prompt_dir () {
 prompt_context () { }
 
 test -e "${HOME}/dotfiles/zsh/.iterm2_shell_integration.zsh" && source "${HOME}/dotfiles/zsh/.iterm2_shell_integration.zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

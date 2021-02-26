@@ -30,6 +30,8 @@ call plug#begin('~/dotfiles/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/remote', 'do': ':UpdateRemotePlugins' }
     Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
+    
     "GIT
     Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'

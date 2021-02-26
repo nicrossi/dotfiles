@@ -1,12 +1,15 @@
-export PATH=/opt/homebrew/bin:$PATH
-
 export EDITOR=nvim
 export MYVIMRC="$HOME/dotfiles/nvim/init.vim"
 export NVM_DIR="$HOME/dotfiles/.nvm"
 export PATH_TO_PLAYGROUND="$HOME/playground"
 export PATH_TO_WORKSPACE="$HOME/workspace"
 export XDG_CONFIG_HOME="$HOME/dotfiles"
-export JAVA_HOME="Library/Java/JavaVirtualMachines/openjdk-15.0.2/Contents/Home"
+
+export JDK_HOME="$HOME/Library/Java/JavaVirtualMachines/azul-11.0.10/Contents/Home"
+#export JAVA_HOME="$HOME/Library/Java/JavaVirtualMachines/azul-11.0.10/Contents/Home"
+
+export PATH=/opt/homebrew/bin:$JAVA_HOME/bin:$PATH
+#export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:.
 
 # Path to dotfiles directory
 export DOTDIR="${HOME}/dotfiles"
