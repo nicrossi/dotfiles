@@ -9,7 +9,8 @@ export JDK_HOME="$HOME/Library/Java/JavaVirtualMachines/azul-11.0.10/Contents/Ho
 #export JAVA_HOME="$HOME/Library/Java/JavaVirtualMachines/azul-11.0.10/Contents/Home"
 
 export PATH=/opt/homebrew/bin:$JAVA_HOME/bin:$PATH
-#export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:.
+export APACHE_HOME="$HOME/Library/Java/Apache"
+export CLASSPATH=$CLASSPATH:$JDK_HOME/lib:$APACHE_HOME/commons-lang3-3.11/commons-lang3-3.11.jar:.
 
 # Path to dotfiles directory
 export DOTDIR="${HOME}/dotfiles"
