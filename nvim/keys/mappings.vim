@@ -42,16 +42,17 @@ nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 " <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? "<C-n>" : "<TAB>"
+"inoremap <expr><TAB> pumvisible() ? "<C-n>" : "<TAB>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
 
 " Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <M-Left> <C-w>h
+nnoremap <M-Down> <C-w>j
+nnoremap <M-Up> <C-w>k
+nnoremap <M-Right> <C-w>l
 
 " begininig of line
 nnoremap q 0

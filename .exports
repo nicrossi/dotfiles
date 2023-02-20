@@ -4,22 +4,24 @@ export NVM_DIR="$HOME/dotfiles/.nvm"
 export PATH_TO_PLAYGROUND="$HOME/playground"
 export PATH_TO_WORKSPACE="$HOME/workspace"
 export XDG_CONFIG_HOME="$HOME/dotfiles"
+export DOTDIR="$HOME/dotfiles"
+export ZDOTDIR="$HOME/dotfiles/zsh"
+export ZSH="$ZDOTDIR/.oh-my-zsh"
 
+## Java SDK
 export JDK_HOME="$HOME/Library/Java/JavaVirtualMachines/azul-11.0.10/Contents/Home"
 #export JAVA_HOME="$HOME/Library/Java/JavaVirtualMachines/azul-11.0.10/Contents/Home"
 
-export PATH=/opt/homebrew/bin:$JAVA_HOME/bin:$PATH
+## Glasgow Haskell Compiler
+#export $GHC="$HOME/.cabal/bin:$HOME/.ghcup/bin"
+
+## PostgreSQL
+export POSTGRES_HOME="/Library/PostgreSQL/14"
+
+## PATH 
+export PATH=/opt/homebrew/bin:$JAVA_HOME/bin:$GHC:$POSTGRES_HOME/bin:$PATH
 export APACHE_HOME="$HOME/Library/Java/Apache"
 export CLASSPATH=$CLASSPATH:$JDK_HOME/lib:$APACHE_HOME/commons-lang3-3.11/commons-lang3-3.11.jar:.
-
-# Path to dotfiles directory
-export DOTDIR="${HOME}/dotfiles"
-
-# Path to zsh custom config
-export ZDOTDIR="${HOME}/dotfiles/zsh"
-
-# Path to your oh-my-zsh installation.
-export ZSH="${ZDOTDIR}/.oh-my-zsh"
 
 # less has coloured output, which also helps with manpages
 export LESS=-R
@@ -33,11 +35,8 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
+# Manually set your language environment
 # export LANG=en_US.UTF-8
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # This should be the last line of the file
 # For local changes

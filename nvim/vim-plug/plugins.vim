@@ -10,7 +10,7 @@ call plug#begin('~/dotfiles/nvim/autoload/plugged')
     " Lightline status bar
     Plug 'itchyny/lightline.vim'
     " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+    "Plug 'jiangmiao/auto-pairs'
         " Closetags
     Plug 'alvan/vim-closetag'
     "JSON with comments for vim
@@ -34,7 +34,7 @@ call plug#begin('~/dotfiles/nvim/autoload/plugged')
     
     "GIT
     Plug 'mhinz/vim-signify'
-    Plug 'tpope/vim-fugitive'
+"    Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
     Plug 'rhysd/git-messenger.vim'
