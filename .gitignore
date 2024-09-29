@@ -3,6 +3,9 @@ zsh/.zsh_history
 zsh/.zcompdump*
 zsh/.zsh_sessions/
 
+# Github copilot
+github-copilot/
+
 # temp files
 .DS_Store
 

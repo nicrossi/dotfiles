@@ -1,7 +1,7 @@
 # Source this first since it contains the locations of directories needed by funcitons
-source "${HOME}/dotfiles/.exports"
-source "${HOME}/dotfiles/.functions"
-source "${HOME}/dotfiles/.aliases"
+source "${HOME}/.dotfiles/.exports"
+source "${HOME}/.dotfiles/.functions"
+source "${HOME}/.dotfiles/.aliases"
 
 # Set name of the theme to load
 ZSH_THEME="robbyrussell"

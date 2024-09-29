@@ -3,21 +3,34 @@
 alias ohmyzsh="nvim ${ZSH}/oh-my-zsh.sh"
 alias zshconfig="nvim ${ZDOTDIR}/.zshrc"
 
+# SKHD
+alias skhdrc="nvim /Users/nick/.skhdrc"
+# YABAI
+alias yabairc="nvim $HOME/.config/yabai/yabairc"
+
 # Terminal
 # ========
 # Some other aliases are defined in:
 # .oh-my-zsh/lib/theme-and-appearance.zsh
 alias home='cd ~'
+alias exports='nvim ~/dotfiles/.exports'
+alias aliases='nvim ~/dotfiles/.aliases'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ls='ls -GA'
 alias vim='nvim'
+alias workspace='cd ~/workspace'
+alias icloud='cd /Users/nick/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 
 # Git
 # ===
 alias g='git'
+alias go='git checkout'
+alias gob='git checkout -b'
+alias gst='git status'
+alias grb='git rebase'
 # check .gitconfig for other aliases
 
 # NPM

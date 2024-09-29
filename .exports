@@ -1,25 +1,58 @@
 export EDITOR=nvim
-export MYVIMRC="$HOME/dotfiles/nvim/init.vim"
-export NVM_DIR="$HOME/dotfiles/.nvm"
+export MYVIMRC="$HOME/.dotfiles/nvim/init.vim"
+export NVM_DIR="$HOME/.dotfiles/.nvm"
 export PATH_TO_PLAYGROUND="$HOME/playground"
 export PATH_TO_WORKSPACE="$HOME/workspace"
-export XDG_CONFIG_HOME="$HOME/dotfiles"
-export DOTDIR="$HOME/dotfiles"
-export ZDOTDIR="$HOME/dotfiles/zsh"
-export ZSH="$ZDOTDIR/.oh-my-zsh"
+export XDG_CONFIG_HOME="$HOME/.dotfiles"
+export ZSH="$XDG_CONFIG_HOME/zsh/.oh-my-zsh"
+export ICLOUD="/Users/nick/Library/Mobile Documents/com~apple~CloudDocs"
+
+# Homebrew link libs
+export CPATH="/opt/homebrew/include"
+export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
+export LDFLAGS="-L/opt/homebrew/lib"
+export CPPFLAGS="-I/opt/homebrew/include"
+
+## Blast
+export BLAST=/usr/local/ncbi/blast/ 
+## Anaconda3
+export CONDA=/opt/homebrew/anaconda3
+
+## Java
+export JVMS="$HOME/Library/Java/JavaVirtualMachines"
 
 ## Java SDK
-export JDK_HOME="$HOME/Library/Java/JavaVirtualMachines/azul-11.0.10/Contents/Home"
-#export JAVA_HOME="$HOME/Library/Java/JavaVirtualMachines/azul-11.0.10/Contents/Home"
+#export JDK_HOME="$JVMS/zulu-8.jdk/Contents/Home"
+#export JAVA_HOME="$JVMS/zulu-8.jdk/Contents/Home"
+
+#export JDK_HOME="$JVMS/azul-17.0.12/Contents/Home"
+#export JAVA_HOME="$JVMS/azul-17.0.12/Contents/Home"
+
+export JDK_HOME="$JVMS/openjdk17"
+export JAVA_HOME="$JVMS/openjdk17"
+
+
+## Jetty
+export JETTY_HOME="$HOME/Library/Jetty/jetty-9.4.8.v20180619"
+
 
 ## Glasgow Haskell Compiler
-#export $GHC="$HOME/.cabal/bin:$HOME/.ghcup/bin"
+#export GHC="$HOME/.cabal/bin:$HOME/.ghcup/bin"
 
 ## PostgreSQL
 export POSTGRES_HOME="/Library/PostgreSQL/14"
 
+### Tomcat
+export CATALINA_HOME="/opt/homebrew/etc/tomcat@7"
+
+### MySQL docker
+export MYSQL_ROOT_PASSWORD=root
+export MYSQL_DATABASE=mysqldb
+export MYSQL_USER=nick
+export MYSQL_PASSWORD=password
+
 ## PATH 
-export PATH=/opt/homebrew/bin:$JAVA_HOME/bin:$GHC:$POSTGRES_HOME/bin:$PATH
+export PATH=/opt/homebrew/bin:$JAVA_HOME/bin:$GHC:$POSTGRES_HOME/bin:$PATH:$JETTY_HOME/bin:$HOME/bin:$CATALINA_HOME/bin:$BLAST/bin:$CONDA/bin
 export APACHE_HOME="$HOME/Library/Java/Apache"
 export CLASSPATH=$CLASSPATH:$JDK_HOME/lib:$APACHE_HOME/commons-lang3-3.11/commons-lang3-3.11.jar:.
 

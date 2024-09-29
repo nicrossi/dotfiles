@@ -1,1 +1,1 @@
-ZDOTDIR=~/dotfiles/zsh
+ZDOTDIR=~/.dotfiles/zsh
